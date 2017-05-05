@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"">
+	<meta charset="utf-8">
+	<title>Mastermind</title>
+</head>
+<body>
+	<p id="title">Mastermind</p>
+	<div  class="wrap_center">
+		<table class="side_by_side">
+			<% for i in 0..board_x%>
+				<tr>
+					<%for j in 0..board_y%>
+						<td class="circle" style="background-color: <%=board[i][j]%>;"td></td>
+					<%end%>
+				</tr>
+			<%end%>
+		</table>
+
+		<table class="side_by_side">
+			<% for i in 0..board_x%>
+				<tr>
+					<%for j in 0..board_y%>
+						<td class="circle"td></td>
+					<%end%>
+				</tr>
+			<%end%>
+		</table>
+	</div>
+	<div class="wrap_center">
+		<a href="/mastermind">New Game</a>
+		<a href="/">Back</a>
+	</div>
+</body>
+</html>

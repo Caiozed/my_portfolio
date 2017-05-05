@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<p><strong>Caesar Cipher</strong></p>
+	<% if !word.empty?%>
+		<p>Your encoded word is: <%=word%></p>
+	<%end%>
+	<form>
+		<label>Text to encode:</label>
+		<input type="text" name="word">
+		<br>
+		<label>Key number:</label>
+		<input type="text" name="number">
+		<br>
+		<input type="submit" value="Encode!">
+	</form>
+	<a href="/">Back</a>
+</body>
+</html>
