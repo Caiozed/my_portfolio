@@ -1,5 +1,5 @@
 class Mastermind
-	attr_reader :board, :board_size_x, :board_size_y, :color
+	attr_reader :board, :board_size_x, :board_size_y, :color, :colors
 	attr_accessor :on_game, :turn_swap
 
 	def initialize
@@ -18,21 +18,5 @@ class Mastermind
 			end
 		end                                          
 	end
-
-	def change_color(color)
-		@color = color
-	end
-
-	def change_turn
-		
-	end
-
-	def check_winner(x, y)
-
-	end
-
-	def restart 
-	end
-
 end
 

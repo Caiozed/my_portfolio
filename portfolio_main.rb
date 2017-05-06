@@ -20,6 +20,6 @@ get '/mastermind' do
 	erb :mastermind_index, :locals => {:board_x => game.board_size_x,
 										:board_y => game.board_size_y,
 										:board => game.board,
-										:color => game.color
+										:colors => game.colors
 									}
 end

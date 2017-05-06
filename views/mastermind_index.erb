@@ -12,25 +12,27 @@
 			<% for i in 0..board_x%>
 				<tr>
 					<%for j in 0..board_y%>
-						<td class="circle" style="background-color: <%=board[i][j]%>;"td></td>
+						<td class="circle" data-color=<%=board[i][j]%>></td>
 					<%end%>
 				</tr>
 			<%end%>
 		</table>
-
-		<table class="side_by_side">
-			<% for i in 0..board_x%>
-				<tr>
-					<%for j in 0..board_y%>
-						<td class="circle"td></td>
-					<%end%>
-				</tr>
-			<%end%>
-		</table>
+	
+	<div class="wrap_center">
+		<%for i in 0..colors.length-1%>
+			<a href="#" class="circle side_by_side" 
+			style="background-color: <%=colors[i]%>;"
+			data-color=<%=colors[i]%>>				
+			</a>
+		<%end%>
 	</div>
+		
 	<div class="wrap_center">
 		<a href="/mastermind">New Game</a>
 		<a href="/">Back</a>
 	</div>
+
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/mastermind.js"></script>
 </body>
 </html>
