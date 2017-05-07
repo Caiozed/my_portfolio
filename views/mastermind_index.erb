@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css"">
+	<link rel="stylesheet" type="text/css" href="styles/mastermind_styles.css"">
 	<meta charset="utf-8">
 	<title>Mastermind</title>
 </head>
 <body>
 	<p id="title">Mastermind</p>
+	<p class="wrap_center"><a class="btn" href="/mastermind">New Game</a></p>
+	<p class=" wrap_center btn counter">X30</p>
 	<div  class="wrap_center">
-		<table class="side_by_side">
+		<table class="wrap_center">
 			<% for i in 0..board_x%>
 				<tr>
 					<%for j in 0..board_y%>
-						<td class="circle" data-color=<%=board[i][j]%>></td>
+						<td class="circle clickable" data-color=<%=board[i][j]%>></td>
 					<%end%>
 				</tr>
 			<%end%>
 		</table>
-	
+	</div>
+
 	<div class="wrap_center">
 		<%for i in 0..colors.length-1%>
-			<a href="#" class="circle side_by_side" 
+			<a href="#" class="circle" 
 			style="background-color: <%=colors[i]%>;"
 			data-color=<%=colors[i]%>>				
 			</a>
 		<%end%>
 	</div>
 		
-	<div class="wrap_center">
-		<a href="/mastermind">New Game</a>
-		<a href="/">Back</a>
-	</div>
+	<p class="wrap_center"><a class="btn" href="/">Back</a></p>
 
+	<p class="footer">&copy; Caio Neves </p>
 	<script type="text/javascript" src="javascript/jquery.js"></script>
 	<script type="text/javascript" src="javascript/mastermind.js"></script>
 </body>
