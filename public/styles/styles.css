@@ -1,0 +1,39 @@
+body {
+	background-color: grey;
+}
+
+.wrap_center{
+	text-align: center;
+	margin: 15px auto;
+	width: 50%;
+}
+
+.btn{
+	color: grey;
+	font-size: 40px;
+	background-color: black;
+	border-radius: 5%;
+	margin: 15px;
+	padding:  10px;
+	text-decoration: none;
+	font-family: 'Romanesco', cursive;
+	transition: color, 1s;
+	-webkit-transition: color, 1s;
+}
+
+.btn:hover{
+	color: white;
+}
+
+.footer{
+	color: grey;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+	position: fixed;
+	padding: 5px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: black;
+}

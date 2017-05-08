@@ -1,0 +1,16 @@
+
+#title{
+	margin: 15px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 100px;
+	font-family: 'Romanesco', cursive;
+	transition: color, 2s;
+	-webkit-transition: color, 2s;
+}
+
+#title:hover{
+	color: white;
+}
+
+
