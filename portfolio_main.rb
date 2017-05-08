@@ -1,6 +1,6 @@
 require 'sinatra'
-require './scripts/caesar_cipher'
-require './scripts/mastermind'
+require './ruby/caesar_cipher'
+require './ruby/mastermind'
 require 'sinatra/reloader' if development? 
 
 get '/' do
@@ -23,3 +23,11 @@ get '/mastermind' do
 										:colors => game.colors
 									}
 end
+
+get '/sketchpad' do
+	erb :sketchpad_index
+end 
+
+get '/pomodoro_clock' do
+	erb :pomodoro_clock_index
+end 
