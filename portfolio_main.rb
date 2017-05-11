@@ -31,3 +31,7 @@ end
 get '/pomodoro_clock' do
 	erb :pomodoro_clock_index
 end 
+
+get '/tic_tac_toe' do
+	erb :tic_tac_toe_index
+end 
