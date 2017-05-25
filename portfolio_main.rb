@@ -35,3 +35,7 @@ end
 get '/tic_tac_toe' do
 	erb :tic_tac_toe_index
 end 
+
+get '/space_shooter' do
+	erb :space_shooter_index
+end 
